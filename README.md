@@ -1,4 +1,4 @@
-![TaskVerse View](Images/TaskVerse.png){: .center }
+![TaskVerse View](Images/TaskVerse.png)
 
 
 # TaskVerse
