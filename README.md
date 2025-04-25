@@ -165,24 +165,8 @@ These variables should also be set in the Dockerfile for containerized deploymen
 
 Here is the directory structure of TaskVerse:
 
-TaskVerse/
-├── app/                      # Main application logic
-├── components/               # React components
-├── hooks/                    # Custom React hooks
-├── lib/                      # Utility functions and libraries
-├── public/                   # Static files like images
-├── src/                      # Source code
-├── styles/                   # Tailwind CSS configuration
-├── .dockerignore             # Docker ignore file
-├── .env                      # Environment variables
-├── .gitignore                # Git ignore file
-├── Dockerfile                # Docker setup file
-├── next.config.mjs           # Next.js config
-├── package.json              # NPM package dependencies
-├── pnpm-lock.yaml            # pnpm lock file
-├── postcss.config.mjs        # PostCSS config
-├── tailwind.config.ts        # Tailwind CSS config
-└── tsconfig.json             # TypeScript configuration
+![TaskVerse Structure](Images/Structure.png)
+
 
 ## Contributing
 
