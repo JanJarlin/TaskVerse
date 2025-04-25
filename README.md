@@ -1,7 +1,5 @@
+![TaskVerse View](Images/TaskVerse.png){: .center }
 
-<div style="text-align: center;">
-  <img src="Images/TaskVerse.png" alt="TaskVerse View" />
-</div>
 
 # TaskVerse
 
