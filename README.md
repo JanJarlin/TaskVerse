@@ -147,3 +147,20 @@ To dockerize TaskVerse:
    ```
 
 6. Your app should now be running at http://localhost:3000 within the Docker container.
+
+## Environment Variables
+
+Make sure to configure the following environment variables in your .env file:
+
+NEXT_PUBLIC_SUPABASE_URL - Your Superbase API URL
+
+NEXT_PUBLIC_SUPABASE_ANON_KEY - Your Superbase API Key
+
+SUPERBASE_URL - Your Superbase API URL
+
+SUPERBASE_KEY - Your Superbase API Key
+
+These variables should also be set in the Dockerfile for containerized deployments.
+
+
+
