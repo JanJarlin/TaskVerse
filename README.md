@@ -1,3 +1,5 @@
+![TaskVerse View](Images/TaskVerse.png)
+
 # TaskVerse
 
 TaskVerse is a modern web application designed to help you organize your tasks and boost your productivity with a futuristic and user-friendly interface. Built with **Vercel** and **Firebase**, and using **Superbase** as the database, TaskVerse aims to make task management easy and efficient for everyone.
