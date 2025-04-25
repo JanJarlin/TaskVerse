@@ -1,2 +1,1 @@
-docker pull janjarlin/taskverse 
-docker run -d --name taskverse -v taskverse-vol:/app -p 3000:3000 janjarlin/taskverse:latest
+
