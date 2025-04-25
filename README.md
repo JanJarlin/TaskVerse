@@ -13,7 +13,6 @@ TaskVerse is a modern web application designed to help you organize your tasks a
 - [Environment Variables](#environment-variables)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
@@ -152,15 +151,41 @@ To dockerize TaskVerse:
 
 Make sure to configure the following environment variables in your .env file:
 
-NEXT_PUBLIC_SUPABASE_URL - Your Superbase API URL
+ - NEXT_PUBLIC_SUPABASE_URL - Your Superbase API URL
 
-NEXT_PUBLIC_SUPABASE_ANON_KEY - Your Superbase API Key
+ - NEXT_PUBLIC_SUPABASE_ANON_KEY - Your Superbase API Key
 
-SUPERBASE_URL - Your Superbase API URL
+ - SUPERBASE_URL - Your Superbase API URL
 
-SUPERBASE_KEY - Your Superbase API Key
+ - SUPERBASE_KEY - Your Superbase API Key
 
 These variables should also be set in the Dockerfile for containerized deployments.
 
+## Project Structure
+
+Here is the directory structure of TaskVerse:
+
+TaskVerse/
+├── app/                      # Main application logic
+├── components/               # React components
+├── hooks/                    # Custom React hooks
+├── lib/                      # Utility functions and libraries
+├── public/                   # Static files like images
+├── src/                      # Source code
+├── styles/                   # Tailwind CSS configuration
+├── .dockerignore             # Docker ignore file
+├── .env                      # Environment variables
+├── .gitignore                # Git ignore file
+├── Dockerfile                # Docker setup file
+├── next.config.mjs           # Next.js config
+├── package.json              # NPM package dependencies
+├── pnpm-lock.yaml            # pnpm lock file
+├── postcss.config.mjs        # PostCSS config
+├── tailwind.config.ts        # Tailwind CSS config
+└── tsconfig.json             # TypeScript configuration
+
+## Contributing
+
+Contributions are always welcome! If you'd like to contribute, feel free to fork the repository and submit a pull request. Please ensure your code follows the project's code style and includes tests where applicable.
 
 
