@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 10%; /* Dark blue */
+    --foreground: 200 20% 97%; /* Light gray */
+    --card: 0 0% 10%;
+    --card-foreground: 200 20% 97%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 200 20% 97%;
+    --primary: 172 60% 44%; /* Teal */
+    --primary-foreground: 200 20% 97%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 200 20% 97%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 200 20% 60%;
+    --accent: 172 60% 20%; /* Darker teal */
+    --accent-foreground: 200 20% 97%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 23.5%;
+    --input: 0 0% 23.5%;
+    --ring: 172 60% 44%; /* Teal */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 200 20% 80%;
+    --sidebar-primary: 172 60% 44%; /* Teal */
+    --sidebar-primary-foreground: 200 20% 97%;
+    --sidebar-accent: 172 60% 20%; /* Darker teal */
+    --sidebar-accent-foreground: 200 20% 97%;
+    --sidebar-border: 0 0% 23.5%;
+    --sidebar-ring: 172 60% 44%; /* Teal */
+  }
+  .dark {
+    --background: 0 0% 10%; /* Dark blue */
+    --foreground: 200 20% 97%; /* Light gray */
+    --card: 0 0% 10%;
+    --card-foreground: 200 20% 97%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 200 20% 97%;
+    --primary: 172 60% 44%; /* Teal */
+    --primary-foreground: 200 20% 97%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 200 20% 97%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 200 20% 60%;
+    --accent: 172 60% 20%; /* Darker teal */
+    --accent-foreground: 200 20% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 23.5%;
+    --input: 0 0% 23.5%;
+    --ring: 172 60% 44%; /* Teal */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 200 20% 80%;
+    --sidebar-primary: 172 60% 44%; /* Teal */
+    --sidebar-primary-foreground: 200 20% 97%;
+    --sidebar-accent: 172 60% 20%; /* Darker teal */
+    --sidebar-accent-foreground: 200 20% 97%;
+    --sidebar-border: 0 0% 23.5%;
+    --sidebar-ring: 172 60% 44%; /* Teal */
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .card-border-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-border-effect:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+    background-size: 50% 100%;
+    animation: border-animation 6s linear infinite;
+  }
+
+  @keyframes border-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .card-border-effect > * {
+    position: relative;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
