@@ -106,16 +106,44 @@ To run **TaskVerse** locally, follow these steps:
 
 3. Create a .env file based on the .env.example file and provide your Superbase API URL and Key. Example:
 
-  ```bash
-  SUPERBASE_URL=your_superbase_url
-  SUPERBASE_KEY=your_superbase_key
-  ```
+   ```bash
+   SUPERBASE_URL=your_superbase_url
+   SUPERBASE_KEY=your_superbase_key
+   ```
 
 4. Start the development server:
 
-  ```bash
-  pnpm run dev
-  ```
-
+   ```bash
+   pnpm run dev
+   ```
    
+5. Your app should now be running at http://localhost:3000.
+   
+### Docker Setup
 
+To dockerize TaskVerse:
+
+1. Ensure you have Docker installed on your machine.
+
+2. Create your .env file with the Superbase API URL and Key (same as the local setup).
+
+3. In the Dockerfile, ensure you replace SUPERBASE_URL and SUPERBASE_KEY with the correct environment variables.
+
+   ```bash
+   ENV SUPERBASE_URL=your_superbase_url
+   ENV SUPERBASE_KEY=your_superbase_key
+   ```
+   
+4. Build the Docker image:
+
+   ```bash
+   docker build -t taskverse .
+   ```
+   
+5. Run the container:
+
+   ```bash
+   docker run -p 3000:3000 taskverse
+   ```
+
+6. Your app should now be running at http://localhost:3000 within the Docker container.
